@@ -22,3 +22,7 @@ Inicie o servidor
 ```bash
   npm run dev
 ```
+
+## 📄 Licença
+
+This project is MIT licensed, as found in the [LICENSE](./LICENSE) file.

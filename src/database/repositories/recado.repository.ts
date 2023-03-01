@@ -19,7 +19,7 @@ export class RecadoRepository {
     return await manager.save(newRecado);
   }
 
-  async getAllNotes(userId: string): Promise<RecadoEntity[]> {
+  async getAllRecados(userId: string): Promise<RecadoEntity[]> {
     const manager = pgHelper.client.manager;
     return await manager.find(RecadoEntity, { where: { userId } });
   }

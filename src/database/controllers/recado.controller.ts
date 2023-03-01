@@ -7,11 +7,11 @@ export class RecadoController {
 
     const repository = new RecadoRepository();
 
-    const note = await repository.createRecado(titulo, descricao, userId);
+    const recado = await repository.createRecado(titulo, descricao, userId);
 
     return res.status(200).json({
       success: true,
-      data: note,
+      data: recado,
     });
   }
 
@@ -20,11 +20,11 @@ export class RecadoController {
 
     const repository = new RecadoRepository();
 
-    const notes = await repository.getAllNotes(userId!);
+    const recados = await repository.getAllRecados(userId!);
 
     return res.status(200).json({
       success: true,
-      data: notes,
+      data: recados,
     });
   }
 
@@ -34,11 +34,11 @@ export class RecadoController {
 
     const repository = new RecadoRepository();
 
-    const note = await repository.updateRecado(idRecado, titulo, descricao);
+    const recado = await repository.updateRecado(idRecado, titulo, descricao);
 
     res.status(200).json({
       success: true,
-      data: note,
+      data: recado,
     });
   }
 

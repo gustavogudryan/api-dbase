@@ -25,4 +25,4 @@ Inicie o servidor
 
 ## 📄 Licença
 
-Esse projeto tem licença MIT, você pode achar a licença aqui [LICENSE](./LICENSE) file.
+Esse projeto tem licença MIT, você pode achar a licença aqui [LICENSE](./LICENSE)
